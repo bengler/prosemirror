@@ -551,7 +551,7 @@ export class Schema {
   // bound.
   markFromJSON(json) {
     if (typeof json == "string") return this.mark(json)
-    return this.mark(json._, json)
+    return this.mark(json.type, json)
   }
 
   // :: (string) → NodeType

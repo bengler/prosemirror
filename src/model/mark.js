@@ -17,8 +17,8 @@ export class Mark {
   // :: () → Object
   // Convert this mark to a JSON-serializeable representation.
   toJSON() {
-    if (this.type.instance) return this.type.name
-    let obj = {_: this.type.name}
+    if (this.type.instance) return {type: this.type.name}
+    let obj = {type: this.type.name}
     for (let attr in this.attrs) obj[attr] = this.attrs[attr]
     return obj
   }
