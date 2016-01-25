@@ -1,5 +1,5 @@
 {
-  "name": "prosemirror",
+  "name": "@bengler/prosemirror",
   "version": "0.2.0",
   "description": "Well-defined WYSIWYG editor",
   "main": "dist/edit/index.js",
